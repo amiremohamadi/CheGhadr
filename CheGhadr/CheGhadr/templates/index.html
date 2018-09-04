@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head> <link rel="stylesheet" href="{% static 'css/style.css' %}"> </head>
+<body>
+    <header class="header">
+        <a class="logo">How Many</a>
+        <div class="header-right">
+            <a href="/about">من!</a>
+            <a class="active">اصلی</a>
+        </div>
+    </header>
+    <div class="div" align="center">
+        <img src="{% static 'img/main-pic.jpg' %}" width="30%" height="30%">
+        <h1>چقدر طول میکشه؟</h1>
+        <h3>حقوق ماهیانه خودت رو وارد کن 
+            تا ببینی با چقدر کارکردن میتونی فلان چیز رو از دیجیکالا بخری (:</h3>
+    </div>
+    <form action="/product" method="post"> {% csrf_token %}
+        {{ form.address }}<br>
+        {{ form.wage }}<br>
+        <button class="button" type="submit" value="Submit">بزن بریم!</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head> <link rel="stylesheet" href="{% static 'css/style.css' %}"> </head>
+<body align="center">
+    <div style="display: inline-block;vertical-align:top">
+    <img class="image" src="{{ img }}" style="display: inline-block" width="70%" height="70%">
+    </div>
+    <div style="display: inline-block" align="right">
+        <h2>{{ title }}</h2>
+        <h3>قیمت: {{ price }} ریال</h3>
+        <h3>حقوق شما: {{ wage }} ریال</h3>
+        <h3>با فرض ۱۰ روز تعطیلی در ماه، بعد از {{ day }} روز میتونی بخری!</h3>
+        <h3>با فرض اینکه ۸ ساعت در روز کار میکنی، بعد از {{ hour }} ساعت میتونی بخری!!</h3>
+    </div>
+    <div>
+        <a class="button" href="/">برگردیم</a>    
+    </div>
+</body>
+</html>
