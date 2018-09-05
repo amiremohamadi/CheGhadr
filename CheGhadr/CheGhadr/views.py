@@ -17,6 +17,8 @@ class ProductView(TemplateView):
         address = request.POST.get('address')
         wage = request.POST.get('wage')
         _product = product.info(address)
+        # check validation
+        if _product == False:   return render(request, 'error.html')
         # how many days/housr you must work!
         how_many = calculate(int(wage), int(_product['price']))
 
