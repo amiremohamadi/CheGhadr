@@ -1,10 +1,10 @@
 # CheGhadr?!
 
-> دوست داری بدونی چند ساعت واسه خرید یه چیز باید کار کنی؟
+> Would you like to know how many hours you must work to buy sth from digikala.com
 
-مدتی بود دوست داشتم بدونم با چند ساعت کارکردن میتونم وسیله مورد علاقم رو از دیجیکالا بخرم.
+This is a simple site using python-django to calculate how many hours you must work to buy sth :)
 
-خب! پس دست به کار شدم و نتیجه شد این سایت جنگویی (: البته هنوز کلی جای کار داره
+(just for fun)
 
 ![pic](screen-shots/git1.png)
 ![pic](screen-shots/git2.png)
