@@ -8,7 +8,6 @@ This is a simple site using python-django to calculate how many hours you must w
 
 ![pic](screen-shots/git1.png)
 ![pic](screen-shots/git2.png)
-![pic](screen-shots/git3.png)
 
 ## How to use
 
