@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import re_path
-from CheGhadr.views import (
+from .views import (
     HomeView, ProductView, AboutView
     )
 

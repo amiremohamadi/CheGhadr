@@ -4,15 +4,19 @@ from CheGhadr.forms import ProductForm
 from ScrapProduct import product
 from Calculate.calculate import calculate
 
+
 class HomeView(FormView):
     form_class = ProductForm
     template_name = 'index.html'
 
+
 class AboutView(TemplateView):
     template_name = 'about.html'
 
+
 class ProductView(TemplateView):
     template_name = 'error.html'
+
     def post(self, request):
         address = request.POST.get('address')
         wage = request.POST.get('wage')
