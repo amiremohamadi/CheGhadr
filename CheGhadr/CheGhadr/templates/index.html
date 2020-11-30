@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
 {% load static %}
-<head> <link rel="stylesheet" href="{% static 'css/style.css' %}"> </head>
+{% load bootstrap %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 <body>
     <header class="header">
         <a class="logo">How Many</a>
@@ -10,6 +20,7 @@
             <a class="active">اصلی</a>
         </div>
     </header>
+    <div class="container">
     <div class="div" align="center">
         <img src="{% static 'img/main-pic.jpg' %}" width="30%" height="30%">
         <h1>چقدر طول میکشه؟</h1>
@@ -17,9 +28,9 @@
             تا ببینی با چقدر کارکردن میتونی فلان چیز رو از دیجیکالا بخری (:</h3>
     </div>
     <form action="/product" method="post"> {% csrf_token %}
-        {{ form.address }}<br>
-        {{ form.wage }}<br>
-        <button class="button" type="submit" value="Submit">بزن بریم!</button>
+        {{ form|bootstrap }}
+        <button class="btn btn-success" type="submit" value="Submit">بزن بریم!</button>
     </form>
+</div>
 </body>
 </html>
